@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculator Program..</title>
+    
+    <style>
+        .cal{
+            height:auto;
+            width: 550px;
+            border:3px soild gray;
+        margin:auto;
+        padding: 30px;
+            background:rgba(23, 220, 181, 0.405);
+            border-radius: 10px;
+        }
+        input[type="text"]{
+            height:40px;
+            width:98%;
+            margin:1px;
+            font-size:20px;
+            border-radius: 20px;
+            padding: 3px;
+
+        }
+        input[type="text"]:hover{
+            background-color: rgba(0, 255, 255, 0.633);
+            color:black;
+            border-radius: 20px;
+        }
+        button{
+            display:inline-block;
+           
+            border-radius: 50%;
+            border:none;
+            width:20%;
+            margin:10px;
+            padding:20px;
+            background: radial-gradient(rgba(244, 189, 81, 0.878),white);
+            font-size: 15px;
+            font-weight: bolder;
+        }
+        button:hover{
+            background: radial-gradient(rgb(193, 178, 17),rgb(255, 255, 255));
+        }
+    </style>
+</head>
+<body>
+<div class="cal">
+    <div id="inputf">
+        <input type="text" placeholder="0" id="inp">
+
+    </div>
+    <div>
+        <button onclick="clearonechar()">C</button>
+        <button onclick="clearAll()">CE</button>
+        <button onclick="turnoff()"> OFF</button>
+
+        <button onclick="turnon()">ON</button>
+        
+    </div>
+    <div>
+        <button onclick="getvalue('7')">7</button>
+        <button onclick="getvalue('8')">8</button>
+        <button onclick="getvalue('9')"> 9</button>
+
+        <button onclick="getvalue('+')">+</button>
+        
+    </div>
+    <div>
+        <button onclick="getvalue('4')">4</button>
+        <button onclick="getvalue('5')">5</button>
+        <button onclick="getvalue('6')"> 6</button>
+
+        <button onclick="getvalue('-')">-</button>
+        
+    </div>
+    <div>
+        <button onclick="getvalue('1')" >1</button>
+        <button onclick="getvalue('2')">2</button>
+        <button onclick="getvalue('3')"> 3</button>
+
+        <button onclick="getvalue('*')">*</button>
+        
+    </div>
+    <div>
+        <button onclick="getvalue('.')">.</button>
+        <button onclick="getvalue('0')">0</button>
+        <button onclick="getvalue('/')"> /</button>
+
+        <button onclick="clacuate()">=</button>
+        
+</div>
+<script src="../js/cal.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Replace the .home-icon background with your home icon image */
+.home-icon {
+  display: inline-block;
+  width: 40px; /* Adjust according to your icon size */
+  height: 40px; /* Adjust according to your icon size */
+  background-image: url('path_to_your_icon.png'); /* Replace with your icon */
+  background-size: cover; /* Adjust according to your icon */
+}
+
+/* Optional: Style the text or tooltip */
+.home-icon:hover::after {
+  content: "Home";
+  display: block;
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4px 8px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.home-icon:hover::after {
+  opacity: 1;
+}
+
+    </style>
+</head>
+<body>
+    <a href="#" class="home-icon" title="Home">Home</a>
+
+</body>
+</html>
